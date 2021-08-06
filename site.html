@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Polygon</title>
-  <!-- <link rel="stylesheet" href="styles/css.css"> -->
+  <!-- normalize -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/css.css">
 </head>
-
 <body>
-  <!-- <div class="header">
-    <p>First js lesson</p>
-  </div> -->
-
+  <!-- header -->
+  <header class="header">
+    <h1 class="header-text">One of my first sites</h1>
+    <div class="header-changer">
+      <input type="text" class="header-input">
+      <button class="button header-button">
+        <p class="header-button-text">Change header</p>
+      </button>
+    </div>
+  </header>
+  <!-- Дата и время -->
+  <div class="date">
+    <div class="day">
+      <h2 class="today"></h2>
+    </div>
+    <div class="time">
+          <h2 class="clock"></h2>
+    </div>
+  </div>
+  <!-- Мини игра -->
+  <div class="app">
+    <div class="app-content">
+      <div class="app-header">
+        <h2 class="app-header-text app-text">
+          Время игры:
+          <span class="app-header-time">5.0</span>
+        </h2>
+        <h2 class="app-header-result hide app-text">
+          Ваш результат:
+          <span class="result"></span>
+        </h2>
+      </div>
+      <div class="app-screen">
+        <button class="button app-button">Начать</button>
+        <div class="game"></div>
+      </div>
+      <div class="app-footer">
+        <div class="app-input">
+          <label for="game-time" class="app-label">
+            Время игры, (сек)
+          </label>
+          <input type="number" id="game-time" min="5" step="1" value="5">
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="scripts/js.js"></script>
 </body>
-
 </html>

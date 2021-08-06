@@ -1,20 +1,180 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family:  "HM Sans Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-     Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  }
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+ 
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+ }
 
 .header {
-    background: #ffb01f;
-    height: 100px;
-    margin: 0;
-    text-align: center
+  background-color: #dbefff;
+  width: auto;
+  height: 230px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.header p {
-    color: #00406b;
-    font-size: 34px;
-    display: inline-block;
-    font-weight: 900;
-} */
+.header-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: -2px 2px 0 #C29DFA,
+      -4px 4px 0 #934FFA,
+      -6px 6px 0 #6600FF;
+  -moz-user-select: none;
+  margin-bottom: 10px;
+  margin-top: 0;
+ }
+
+ .date {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   height: 124px;
+ }
+
+ .time {
+   background-color: #fe6f5e;
+   font-size: 1.8rem;
+   border-top: 3px solid #ff432e;
+   border-left: 3px solid #ff432e;
+ }
+
+ .clock {
+   margin-left: 15px;
+ }
+
+ .day {
+  background-color: #afeeee;
+  font-size: 1.8rem;
+  border-top: 3px solid #86e3e3;
+  border-right: 3px solid #86e3e3;
+}
+
+.today {
+  float:right;
+  margin-right: 15px;
+}
+
+.header-changer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 28px;
+  border: #6600FF 2px solid;
+}
+
+.header-input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border-radius: 28px 0 0 28px;
+  border: none;
+  font-size: 0.8rem;
+  padding-left: 15px;
+  outline:none;
+}
+
+.button {
+  background-color: #934FFA;
+  color: #FFFFFF;
+  border: none;
+  width: 130px;
+}
+
+.header-button {
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 0 28px 28px 0;
+}
+
+.button:hover {
+  background-color: #6600FF;
+}
+
+.header-button-text {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.app {
+  background-color: #C29DFA;
+  padding: 70px;
+}
+
+.app-content {
+  background-color: #dbefff;
+  margin: auto;
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 3px solid #a8d8ff ;
+
+}
+
+.app-header {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.app-text {
+  text-shadow: -2px 2px 0 #C29DFA,
+      -4px 4px 0 #934FFA,
+      -6px 6px 0 #6600FF;
+  margin-top: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.app-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-button {
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+.game {
+  border: #d4d4d4 2px solid;
+  background-color: #ededed;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.app-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-label {
+  color: #999999;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  -moz-user-select: none;
+}
+
+#game-time {
+  font-size: 1.0rem;
+  height: 30px;
+  width: 200px;
+  border: 2px solid #999999 ;
+  outline:none;
+  margin-bottom: 10px;
+}
